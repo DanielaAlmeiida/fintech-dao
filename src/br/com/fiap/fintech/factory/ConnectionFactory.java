@@ -11,7 +11,7 @@ public class ConnectionFactory {
 	
 	public Connection conectar() {
 		try {
-			return DriverManager.getConnection(ORACLE, "rm97506", "080403");
+			return DriverManager.getConnection(ORACLE, "usuario", "senha");
 		} catch (SQLException e) {
 			System.out.println("Erro ao conectar...");
 			throw new RuntimeException(e);
